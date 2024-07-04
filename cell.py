@@ -1,7 +1,6 @@
-from tkinter import Button, Label
+from tkinter import Button, Label, messagebox
 import settings
-import random  
-import ctypes
+import random 
 import sys
 
 class Cell:
@@ -54,7 +53,7 @@ class Cell:
         
             # PLAYER WON
             if Cell.cell_count == settings.NUM_MINES:
-                ctypes.windll.user32.MessageBoxW(0, "You won the game! :)", "Congratulations", 0)
+                messagebox.showinfo(title="Congratulations!", message="YOU WON!")
                 sys.exit()
 
         
@@ -106,7 +105,7 @@ class Cell:
 
     def show_mine(self):
         self.button.configure(text='M', bg='red')
-        ctypes.windll.user32.MessageBoxW(0, "You clicked on a mine :(", "Game Over", 0)
+        messagebox.showinfo(title="Game Over", message="You clicked on a mine :(")
         sys.exit()
 
     
