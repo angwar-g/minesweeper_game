@@ -10,3 +10,5 @@ Game Rules
 - The number on a revealed cell indicates how many mines are adjacent to that cell.
 - The game is won when all non-mine cells are revealed.
 - The game is lost if a mine is revealed.
+
+![minesweeper](https://github.com/angwar-g/minesweeper_game/assets/92440009/9eb52a52-d2e4-4146-8814-f5df0f1628a5)
